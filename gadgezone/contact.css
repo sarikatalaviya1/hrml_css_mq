@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+:root {
+    --bgPrimary: #eb984e;
+    --bgsecondry: #fbdb00;
+    --bgfooter: #6c798b;
+    --border: rgb(227, 227, 227);
+    --bgsmoke: whitesmoke;
+
+
+}
+
+nav {
+    border-bottom: 0.1px solid var(--border);
+}
+
+header {
+    display: flex;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+.title {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.title p {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.title i {
+
+    display: none;
+}
+
+ .icon {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.icon a{
+    text-decoration: none;
+    color: black;
+}
+
+ .icon i {
+    padding-top: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.fa-magnifying-glass {
+    border-right: 1px dotted var(--bgfooter);
+    padding-right: 15px;
+}
+
+.count {
+    position: relative;
+    background-color: var(--bgPrimary);
+    border-radius: 50%;
+    padding-left: 6px;
+    width: 20px;
+    height: 20px;
+    top: -7px;
+    left: -5px;
+}
+
+.Nav_full {
+    display: block;
+}
+
+.nav_small {
+    display: none;
+}
+
+.title .c_menu {
+    display: none;
+}
+
+#menu {
+    box-shadow: 2px 2px 2px rgb(240, 238, 238);
+}
+
+#menu>ul {
+    background-color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    padding: 20px;
+    margin-top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#menu>ul>li {
+    padding: 0 2%;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+
+/* contect */
+
+.contact_title p {
+    color: var(--bgfooter);
+    margin: 2% 0 0 13%;
+    font-size: 18px;
+}
+
+.contact_area {
+    background-color: var(--bgsmoke);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact_area .p_title {
+    line-height: 54px;
+    font-size: 30px;
+
+}
+
+.contact_area .p_com {
+    line-height: 27px;
+    margin-top: 1%;
+    color: var(--bgfooter);
+}
+
+
+.contactus {
+    margin: 3% 12.5% 3% 12.5%;
+    display: flex;
+}
+
+.left_part {
+    width: 33%;
+}
+
+.P_first {
+    font-size: 30px;
+    line-height: 54px;
+}
+
+.P_sec {
+    line-height: 27px;
+    color: var(--bgfooter);
+    text-align: justify;
+    margin-right: 3%;
+}
+
+.right_part {
+    width: 66%;
+    background-color: var(--bgPrimary);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: .5% 0;
+}
+
+.right_part div{
+    padding: 2%;
+}
+
+.line_first {
+    font-size: 20px;
+    line-height: 54px;
+}
+.line_sec {
+    /* font-size: 20px; */
+    line-height: 27px;
+}
+.last{
+    margin-top: 7.5%;
+}
+
+.map{
+    margin: 1% 13% 1% 13%;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px 10px;
+
+    background-color: #333;
+    color: white; /* Dark background for footer */
+}
+
+.footer > div {
+   width: 19%;
+}
+
+.footer .payment_option,
+.footer .follow_us,
+.footer .accept,
+.footer .news_letter {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .card img {
+    max-width: 50px;
+    margin: 5px;
+}
+
+.footer .icon_footer i {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.footer p{
+    line-height: 30px;
+}
+.opt{
+    line-height: 60px !important;
+    font-size: 18px;
+}
+.news_letter input{
+    width: 100%;
+    height: 40px;
+    
+    border: 1px solid grey;
+    background-color: #333;
+}
+.news_letter input:focus{
+    border: none;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.news_letter input::placeholder{
+    margin-left: 5px;
+}
+.news_letter button{
+    background-color: white;
+    color: #eb984e;
+    height: 40px;
+}
+.acceptt{
+    background-color: #eb984e;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+}
+.acceptt button{
+    background-color: white;
+    color: #eb984e;
+    border: none;
+    padding: 5px 10px;
+
+}
+@media screen and (max-width: 992px) {
+
+    /* header */
+    header {
+        flex-direction: column;
+        padding-right: 2% 0%;
+       
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .Nav_full {
+        display: none;
+    }
+
+    .nav_small {
+        display: block;
+    }
+
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .title p {
+        padding: 2% 0 0 2%;
+    }
+
+    .title i {
+        padding-right: 2%;
+        padding-top: 2%;
+        font-size: 24px;
+        color: var(--bgPrimary);
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu>ul {
+        border-top: 3px solid var(--bgPrimary);
+        background-color: white;
+        list-style-type: none;
+        display: block;
+        line-height: 2;
+        padding: 20px;
+        margin-top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav_small .icon {
+        width: 100vw;
+        display: flex;
+        justify-content: start;
+        padding-bottom: 2%;
+        background-color: var(--bgsmoke);
+        padding-top: 2%;
+    }
+
+    /* contect */
+
+    .contact_title p {
+        color: var(--bgfooter);
+        margin: 0 0 0 2%;
+        font-size: 18px;
+        margin-top: 5%;
+    }
+
+    .contactus {
+        margin: 0.5% 3%;
+        display: flex;
+        flex-direction: column;
+    }
+    .left_part {
+        width: 100%;
+    }
+    .right_part {
+        width: 100%;
+        background-color: var(--bgPrimary);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+        padding: .5% 2%;
+    }
+
+    .last{
+        margin-top: 0;
+    }
+
+    .map{
+        margin: 5% 3%;
+    }
+    
+    .footer >div{
+        width: 50%;
+    }
+}
+
+
+

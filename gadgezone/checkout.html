@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://gadgetszone-demo.zohocommerce.com/template/8a6c09cd2e624d37ad31b2018e061fb9/images/logo.png"
+            alt="">
+        <h2>
+            Gadgets Zone</h2>
+    </header>
+    <div class="breadcrumb-container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> <span style="color: grey;">></span>
+            <a href="cart.html">View Cart</a> <span style="color:grey">></span>
+            <a href="checkout.html" style="color: black;">Checkout</a>
+        </nav>
+    </div>
+    <div class="progress-steps">
+        <div class="step active">Address</div>
+        <div class="step" style="color: grey;">Dispatch</div>
+        <div class="step" style="color: grey;">Review Order & Make Payment</div>
+    </div>
+    <div class="container">
+        <form class="checkout-form">
+            <div class="shipping-address">
+                <h2>Shipping Address</h2>
+                <div class="name">
+                    <label>
+                        First Name <input type="text" name="firstName" required>
+                    </label>
+                    <label>
+                        Last Name <input type="text" name="lastName" required>
+                    </label>
+                </div>
+
+                <label>
+                    Email <input type="email" name="email" required>
+                </label>
+                <label>
+                    Address <textarea name="" id=""></textarea>
+                </label>
+                    <label>
+                        City <input type="text" name="city" required>
+                    </label>
+                    <label>
+                        Country <input type="text" name="country" value="United States" readonly>
+                    </label>
+    
+               
+                <label>
+                    State / Province
+                    <select name="state" required>
+                        <option value="" disabled selected>Select State / Province</option>
+                        <!-- Add state options here -->
+                    </select>
+                </label>
+                <label>
+                    ZIP Code <input type="text" name="zipCode" required>
+                </label>
+                <label>
+                    Telephone <input type="tel" name="telephone" required>
+                </label>
+                <label style="display: flex; align-items: center;">
+                    <input type="checkbox" style="width: 20%;">
+                    <span style="margin-top: 5px;">Billing Address is same as Shipping Address</span>
+                </label>
+                <!-- <label>
+                    <input type="checkbox" name="billingSameAsShipping" checked>
+                    Billing Address is same as Shipping Address
+                </label> -->
+                
+            </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <label>
+                    Coupon Code <input type="text" name="couponCode">
+                    <button type="button">Apply</button>
+                </label>
+                <div class="summary-details">
+                    <p>Subtotal (2 Items): <span>$777.00</span></p>
+                    <p>Total: <span>$777.00</span></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+
+
+        <div class="payment_option">
+            <p class="opt">Payment Options</p>
+            <div class="card">
+                <img src="https://static.zohocdn.com/sites/stock-images/images/zpstock-image-943.png" alt="">
+                <img src="https://static.zohocdn.com/sites/stock-images/images/zpstock-image-941.png" alt="">
+                <img src="https://static.zohocdn.com/sites/stock-images/images/zpstock-image-942.png" alt="">
+            </div>
+            <p>© gadgets zone</p>
+            <p>Powered by zoho commerce </p>
+        </div>
+        <div class="follow_us">
+            <p class="opt">Follow Us</p>
+            <div class="icon_footer">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+
+        </div>
+        <div class="accept">
+            <p class="opt">We Accept</p>
+            <ul>
+                <li>Visa Cards</li>
+                <li>Master Cards</li>
+                <li>Other Cards</li>
+            </ul>
+        </div>
+        <div class="news_letter">
+            <p class="opt">Newsletter</p>
+            <input type="email" placeholder="Email " name="" id=""><br>
+            <button>Subscribe</button>
+        </div>
+
+    </div>
+
+    <div class="acceptt">
+        <span>We are PCI certified. </span>
+        <button>Accept Now</button>
+    </div>
+
+    </div>
+</body>
+
+</html>
